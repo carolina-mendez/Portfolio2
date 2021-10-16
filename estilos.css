@@ -1,0 +1,83 @@
+body {background-color: #F4F5F9; color: #222222; font-family: 'Poppins', sans-serif; font-size: 12px; margin: 0;
+    counter-reset: titulos;} /*Esta linea counter es para el contador de Servicios*/
+main h1 {color: #333; font-size: 40px;}
+header {width: 100%; height: 100px; padding: 10px;}
+header {background-image: url(imagenes/fondo\ de\ pantalla.jpg);}
+main {width: 900px; padding: 5px; margin: auto;}
+header main section ul li {list-style-type: circle; display: list-item;}
+footer {width: 100%; background-color: #333; height: 100px;}
+
+nav {width: 100%; height: 35px; background-color: white; display: flex; justify-content: space-around; align-items: center; line-height: 30px;}
+nav a {color: #333; width: 100px; height: auto; line-height: 30px; text-align: center; text-decoration: none; }
+a {color: #333; width: 100px; height: 30px; line-height: 30px; text-align: center; background: pink; border: 1px dashed;
+    font-size: 14px; margin-left: 5px; display: flex; }
+a:hover {text-decoration: underline; font-weight: bold; background-color: #333;}
+a:link , a:visited {color: white; text-decoration: none;}
+
+
+/* main div img {width: 30%; height: auto; border-radius: 20px 1em 20%; border: greenyellow 1px solid; box-sizing: content-box; box-shadow: -1px -4px 20px greenyellow;} */
+
+/* #servicio1 {position: relative; flex-direction: column;} */
+
+/*
+.desplegable {position: relative; flex-direction: column;}
+.desplegable ul {position: absolute; width: 100%; height: 30px; display: none; flex-direction: column;}
+
+VER LA LISTA DESPLEGABLE DEL MENU*/
+
+
+
+.ServiciosLista {text-align: left;} /* No pude alinear el titulo a la izquierda a pesar de que le aplique class*/
+h2 {font-size: 30px; text-align: center;}
+main p{text-align: justify;}
+form {width: 80%;}
+/*input {margin-bottom: 5px; width: 200px; height: 30px;}*/
+button {width: 200px; height: 30px; background-color: lightcoral; border: 1px solid #333; margin-left: 500px;}
+button:hover {background-color: rgba(127, 233, 233, 0.8);}
+textarea {height: 50px;}
+input, textarea, select {margin-bottom: 5px; width: 200px; height: 30px;} 
+span {color: red;}
+label {font-size: 110%;}
+input [type="radio"] , input [type="checkbox"] {width: 100px; height: 1px;}
+input:focus {width: 300px;}
+textarea:focus {width: 300px;}
+table, th {padding: 10px; width: 60%; border-collapse: collapse; color: #666; margin: auto; border: 5px solid grey;}
+th, td {width: 30%; padding: 2%;}
+th {background-color: #22b5ff; color: white; font-size: 30px;}
+td {background-color: #ccc;}
+/*#section {background-color: aquamarine; justify-content: center;}*/
+img:hover {opacity: 0.5;}
+section h3::before {content: "Servicio" counter(titulos);} /*Esta linea es para el contador de Servicios*/
+section h3 {counter-increment: titulos;} /*Esta linea tambien es para el contador de Servicios*/
+
+
+
+
+
+/*No me salio el ID y el class, quise hacer un div con un color y centrado para reconocerlo y no me lo toma*/
+/*HACER MENU DESPLEGABLE EN HTML Y CSS y agregar botones para chatear todo con positions*/
+/*Hacer algun gradiente*/
+
+/*PRUEBA GRID!!!!*/
+
+#Caja {width: 600px; 
+    height: 200px; 
+    border: 1px dotted black; 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0.5%;
+    margin: 3%;
+    padding: 0.5%;
+    border-radius: 20px 1em 20%; border: greenyellow 1px solid; box-shadow: -1px -4px 20px greenyellow;}
+
+#caja div {border: 1px solid black;}
+div img {width: 199px; height: 199px;}
+
+@media (max-width: 768px) {body {background: salmon;}  /*Esta linea es para cambiar el color cuando cambia el tamaño de pantalla del dispositivo y la de abajo tambien*/
+main,nav {flex-direction: column;}
+section,main {width: 100px;}
+nav {height: auto;}
+nav a {text-align: left; margin-left: 10px;}
+}
+
+@media (max-width: 595px) {body {background: sandybrown;} } /*Esto va al final del css para no pisar jerarquia*/
